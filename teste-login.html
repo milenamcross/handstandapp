@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="referrer" content="no-referrer">
+<meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="#d71327">
+<title>Acesso de teste · Handstand | Milena Miranda</title>
+<style>
+:root{color-scheme:light;--red:#d71327;--ink:#171719;--muted:#64646d;--line:#e3e3e8}*{box-sizing:border-box}body{margin:0;background:#f5f5f7;color:var(--ink);font:16px/1.55 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}header{padding:22px max(24px,calc((100vw - 1100px)/2));border-bottom:1px solid var(--line);background:#fff;display:flex;gap:13px;align-items:center}.mark{background:var(--red);color:white;font-size:30px;font-weight:850;width:44px;height:48px;display:grid;place-items:center}.brand{font-weight:800;letter-spacing:1px;font-size:17px}.brand small{display:block;color:var(--muted);font-size:10px;letter-spacing:2px}main{max-width:1100px;margin:55px auto;padding:0 24px;display:grid;grid-template-columns:1fr 440px;gap:80px;align-items:start}.eyebrow{font-size:12px;font-weight:800;letter-spacing:2px;color:var(--red)}h1{font-size:clamp(36px,5vw,60px);line-height:1.06;letter-spacing:-2px;margin:22px 0}h2{font-size:25px;line-height:1.2;margin:0 0 12px}.lead{max-width:390px;color:var(--muted);font-size:18px}.steps{padding:0;list-style:none;counter-reset:step;margin:30px 0}.steps li{counter-increment:step;padding:13px 0;border-bottom:1px solid var(--line)}.steps li:before{content:"0" counter(step);color:var(--red);font-weight:800;margin-right:14px}.card{background:white;border:1px solid var(--line);border-radius:18px;padding:30px;box-shadow:0 12px 35px #15151a06}.tabs{display:flex;gap:6px;border-bottom:1px solid var(--line);margin-bottom:25px}.tabs button{background:none;color:var(--muted);border-radius:0;padding:10px 12px;border-bottom:3px solid transparent}.tabs button[aria-pressed=true]{color:var(--ink);border-color:var(--red)}label{font-size:14px;font-weight:650;display:block;margin:17px 0 6px}input{display:block;width:100%;border:1px solid #cfcfd7;border-radius:9px;padding:12px;font:inherit;background:white;color:var(--ink)}button{font:inherit;font-weight:700;cursor:pointer;border:0;border-radius:9px;padding:12px 16px;min-height:44px}button:disabled{opacity:.55;cursor:wait}button:focus-visible,input:focus-visible{outline:3px solid #d7132750;outline-offset:3px}.primary{background:var(--red);color:white;width:100%;margin-top:24px}.quiet{background:#f0f0f4;color:var(--ink);margin:14px 0 0}.link{color:var(--red);background:none;padding:8px 0;font-size:14px}.note{font-size:13px;color:var(--muted)}.badge{display:inline-block;border:1px solid #e1b6bb;border-radius:30px;padding:5px 11px;font-size:11px;letter-spacing:1px;color:#9b1827;background:#fff6f7}.message{padding:12px 14px;border-radius:9px;background:#f0f0f4;font-size:14px;margin-top:18px;white-space:pre-line}.message[data-tone=error]{background:#fff0f0;color:#9f1427}.message[data-tone=success]{background:#edf7ef;color:#215d32}[hidden]{display:none!important}.account{overflow-wrap:anywhere;color:var(--muted)}.status-box{background:#f5f5f7;padding:18px;border-radius:12px;margin-top:24px}.status-box strong{display:block;margin-bottom:6px}footer{max-width:1100px;margin:35px auto;padding:0 24px;color:var(--muted);font-size:12px}noscript{display:block;padding:20px;background:#fff0f0}@media(max-width:800px){main{grid-template-columns:1fr;gap:25px;max-width:510px;margin:30px auto}.steps{display:none}h1{font-size:40px;margin:15px 0}.lead{font-size:16px}.card{padding:24px}header{padding:18px 24px}footer{max-width:510px}}
+</style>
+</head>
+<body>
+<header><span class="mark" aria-hidden="true">H</span><div class="brand">MILENA MIRANDA<small>CONSTRUINDO SEU HANDSTAND</small></div></header>
+<noscript>Ative o JavaScript no navegador para usar o login.</noscript>
+<main>
+<section aria-label="Sobre o acesso"><span class="badge">VERSÃO DE TESTE</span><h1>Sua prática.<br>Seu próximo<br>passo.</h1><p class="lead">Um acesso para acompanhar sua jornada no Handstand.</p><ol class="steps"><li>Cadastre seu nome e e-mail.</li><li>Confirme o e-mail recebido.</li><li>Entre com sua senha.</li></ol><p class="note">Use o mesmo e-mail informado na compra da Hotmart. Esta página testa o cadastro e a consulta de acesso; os treinos ainda não são entregues aqui.</p></section>
+<section class="card" aria-label="Conta Handstand">
+<div id="forms">
+<div class="tabs" id="tabs"><button type="button" data-mode="login" aria-pressed="true">Entrar</button><button type="button" data-mode="signup" aria-pressed="false">Criar conta</button></div>
+<h2 id="heading">Bem-vinda de volta</h2><p id="description" class="note">Entre com o e-mail e a senha do app.</p>
+<form id="auth-form">
+<div id="name-field" hidden><label for="name">Seu nome</label><input id="name" name="name" autocomplete="name" maxlength="100"></div>
+<div id="email-field"><label for="email">E-mail usado na compra</label><input id="email" name="email" type="email" autocomplete="username" required maxlength="254" autocapitalize="none" spellcheck="false"></div>
+<div id="password-field"><label id="password-label" for="password">Senha</label><input id="password" name="password" type="password" autocomplete="current-password" required maxlength="128"><p id="password-help" class="note" hidden>Use pelo menos 8 caracteres.</p></div>
+<div id="confirm-field" hidden><label for="confirm">Repita a senha</label><input id="confirm" name="confirm" type="password" autocomplete="new-password" maxlength="128"></div>
+<button id="submit" type="submit" class="primary" disabled>Carregando…</button>
+</form>
+<button id="forgot" type="button" class="link">Esqueci minha senha</button>
+<button id="resend" type="button" class="link" hidden>Reenviar confirmação de e-mail</button>
+<button id="back" type="button" class="link" hidden>Voltar para entrar</button>
+</div>
+<div id="account" hidden><p class="eyebrow">CONTA CONECTADA</p><h2 id="greeting">Olá!</h2><p id="account-email" class="account"></p><div class="status-box" role="status"><strong id="access-title">Consultando sua compra…</strong><span id="access-detail" class="note"></span></div><button id="retry" type="button" class="quiet">Verificar acesso novamente</button><br><button id="logout" type="button" class="link">Sair da conta</button></div>
+<div id="message" role="status" aria-live="polite" class="message" hidden></div>
+</section>
+</main><footer>Milena Miranda · Handstand · Ambiente de teste</footer>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.118.0/dist/umd/supabase.js"></script>
+<script>
+(() => {
+  'use strict';
+  const URL_BASE = 'https://qvbdfqishwkihvvdfxau.supabase.co';
+  // Chave pública: o acesso aos dados é controlado pelas políticas do servidor.
+  const PUBLIC_KEY = 'sb_publishable_1vBX-NmIra4-71dIsAo_tQ_CrDCEeiI';
+  const REDIRECT_URL = 'https://milenamcross.github.io/handstandapp/teste-login.html';
+  const PRODUCT_ID = 8714566;
+  const $ = id => document.getElementById(id);
+  let mode = 'login', client, currentUser = null, generation = 0;
+  let recovering = new URLSearchParams(location.hash.slice(1)).get('type') === 'recovery';
+  function message(text, tone = '') { $('message').textContent = text; $('message').dataset.tone = tone; $('message').hidden = !text; }
+  function setMode(next) {
+    mode = next; message(''); $('forms').hidden = false; $('account').hidden = true;
+    const signup = next === 'signup', reset = next === 'reset', update = next === 'update';
+    $('tabs').hidden = reset || update;
+    $('name-field').hidden = !signup; $('name').required = signup;
+    $('email-field').hidden = update; $('email').required = !update;
+    $('password-field').hidden = reset; $('password').required = !reset;
+    $('password').minLength = signup || update ? 8 : 1;
+    $('password').autocomplete = signup || update ? 'new-password' : 'current-password';
+    $('confirm-field').hidden = !(signup || update); $('confirm').required = signup || update;
+    $('password-help').hidden = !(signup || update);
+    $('forgot').hidden = next !== 'login'; $('resend').hidden = next !== 'login';
+    $('back').hidden = !reset;
+    $('heading').textContent = {login:'Bem-vinda de volta',signup:'Crie sua conta',reset:'Recuperar senha',update:'Defina uma nova senha'}[next];
+    $('description').textContent = {login:'Entre com o e-mail e a senha do app.',signup:'Use o mesmo e-mail da compra. Depois, confirme o cadastro na sua caixa de entrada.',reset:'Enviaremos um link para você escolher uma nova senha.',update:'Escolha uma senha com pelo menos 8 caracteres.'}[next];
+    $('submit').textContent = {login:'Entrar',signup:'Criar minha conta',reset:'Enviar link de recuperação',update:'Salvar nova senha'}[next];
+    document.querySelectorAll('[data-mode]').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.mode === next)));
+    $('password').value = ''; $('confirm').value = '';
+  }
+  function explain(error) {
+    const code = error?.code;
+    if (code === 'invalid_credentials') return 'E-mail ou senha incorretos. Confira os dados ou use “Esqueci minha senha”.';
+    if (code === 'email_not_confirmed') return 'Confirme seu e-mail antes de entrar. Confira também a pasta de spam ou reenvie a confirmação abaixo.';
+    if (code === 'weak_password') return 'Escolha uma senha mais forte, com pelo menos 8 caracteres.';
+    if (code === 'user_already_exists') return 'Tente entrar na sua conta ou recuperar a senha.';
+    if (error?.status === 429 || String(code).includes('rate_limit')) return 'Muitas tentativas em pouco tempo. Aguarde alguns minutos e tente novamente.';
+    if (code === 'same_password') return 'Escolha uma senha diferente da anterior.';
+    return 'Não foi possível concluir. Confira sua conexão e tente novamente. Se persistir, informe à Milena o código: ' + (code || error?.status || 'conexao');
+  }
+  async function access(user) {
+    const request = ++generation;
+    $('access-title').textContent = 'Consultando sua compra…'; $('access-detail').textContent = ''; $('retry').disabled = true;
+    try {
+      // RLS restringe a consulta ao e-mail do usuário autenticado. Falhas nunca liberam acesso.
+      const { data, error } = await client.from('handstand_purchases').select('status').eq('product_id', PRODUCT_ID).eq('status', 'approved').limit(1).abortSignal(AbortSignal.timeout(15000));
+      if (request !== generation || currentUser?.id !== user.id) return;
+      if (error) throw error;
+      if (data?.length) {
+        $('access-title').textContent = 'Compra aprovada localizada';
+        $('access-detail').textContent = 'Sua conta foi vinculada a uma compra aprovada. A entrega protegida dos treinos ainda está em preparação nesta versão de teste.';
+      } else {
+        $('access-title').textContent = 'Nenhuma compra aprovada localizada';
+        $('access-detail').textContent = 'Confira se entrou com o e-mail da compra. A integração com a Hotmart ainda está em teste, e compras anteriores podem não ter sido importadas.';
+      }
+    } catch {
+      if (request !== generation) return;
+      $('access-title').textContent = 'Consulta de acesso indisponível';
+      $('access-detail').textContent = 'Seu login funcionou, mas não foi possível consultar a compra. Tente novamente; se persistir, a configuração da integração precisa ser conferida.';
+    } finally { if (request === generation) $('retry').disabled = false; }
+  }
+  async function showSession(session) {
+    if (recovering) { setMode('update'); return; }
+    const user = session?.user; currentUser = user || null;
+    if (!user) { ++generation; setMode('login'); return; }
+    $('forms').hidden = true; $('account').hidden = false; message('');
+    const name = typeof user.user_metadata?.full_name === 'string' ? user.user_metadata.full_name.trim().split(/\s+/)[0] : '';
+    $('greeting').textContent = name ? 'Olá, ' + name + '!' : 'Olá!';
+    $('account-email').textContent = user.email || '';
+    await access(user);
+  }
+  async function busy(button, action) { button.disabled = true; try { await action(); } catch(e) { message(explain(e),'error'); } finally { button.disabled = false; } }
+  document.querySelectorAll('[data-mode]').forEach(b => b.addEventListener('click', () => setMode(b.dataset.mode)));
+  $('forgot').addEventListener('click', () => setMode('reset'));
+  $('back').addEventListener('click', () => setMode('login'));
+  $('retry').addEventListener('click', () => { if(currentUser) access(currentUser); });
+  $('logout').addEventListener('click', () => busy($('logout'), async () => {
+    const { error } = await client.auth.signOut({ scope:'local' }); if(error) throw error;
+    recovering = false; currentUser = null; ++generation; setMode('login');
+  }));
+  $('resend').addEventListener('click', () => busy($('resend'), async () => {
+    if (!$('email').reportValidity()) return;
+    const {error} = await client.auth.resend({type:'signup',email:$('email').value.trim().toLowerCase(),options:{emailRedirectTo:REDIRECT_URL}});
+    if(error) throw error; message('Se houver um cadastro aguardando confirmação, você receberá um novo e-mail. Confira também o spam.','success');
+  }));
+  $('auth-form').addEventListener('submit', e => {
+    e.preventDefault(); if(!client) return;
+    busy($('submit'), async () => {
+      message(''); const email = $('email').value.trim().toLowerCase(), password = $('password').value;
+      if ((mode === 'signup' || mode === 'update') && password !== $('confirm').value) {message('As senhas precisam ser iguais.','error');return;}
+      if(mode === 'signup') {
+        const name = $('name').value.trim(); if(!name){message('Preencha seu nome.','error');return;}
+        const {data,error} = await client.auth.signUp({email,password,options:{data:{full_name:name},emailRedirectTo:REDIRECT_URL}});
+        if(error) throw error; $('password').value = ''; $('confirm').value = '';
+        if(data.session) await showSession(data.session);
+        else message('Confira seu e-mail para confirmar o cadastro. Se já tiver uma conta, use “Entrar” ou recupere sua senha.','success');
+      } else if(mode === 'reset') {
+        const {error} = await client.auth.resetPasswordForEmail(email,{redirectTo:REDIRECT_URL}); if(error) throw error;
+        message('Se este e-mail estiver cadastrado, você receberá um link para definir uma nova senha. Confira também o spam.','success');
+      } else if(mode === 'update') {
+        const {error} = await client.auth.updateUser({password}); if(error) throw error;
+        recovering = false; const {error:outError} = await client.auth.signOut({scope:'local'}); if(outError) throw outError;
+        setMode('login'); message('Senha atualizada. Entre com sua nova senha.','success');
+      } else {
+        const {data,error} = await client.auth.signInWithPassword({email,password}); if(error) throw error;
+        $('password').value = ''; await showSession(data.session);
+      }
+    });
+  });
+  async function init() {
+    if(!window.supabase) { message('Não foi possível carregar o login. Confira sua conexão e atualize a página.','error'); return; }
+    client = window.supabase.createClient(URL_BASE,PUBLIC_KEY,{auth:{flowType:'implicit',storageKey:'handstand-test-auth-v1',detectSessionInUrl:true,persistSession:true,autoRefreshToken:true}});
+    client.auth.onAuthStateChange((event,session) => {
+      if(event === 'PASSWORD_RECOVERY') {recovering = true;setMode('update');}
+      // Executa fora do callback para não bloquear a inicialização do SDK.
+      else if(event === 'SIGNED_OUT') {recovering = false;showSession(null);}
+      else if(event === 'TOKEN_REFRESHED') {currentUser = session?.user || null;}
+      else if(event === 'SIGNED_IN') {setTimeout(()=>showSession(session),0);}
+    });
+    const {data,error} = await client.auth.getSession(); if(error) throw error;
+    const params = new URLSearchParams(location.hash.slice(1));
+    const callbackError = params.has('error') || params.has('error_code');
+    if(location.hash) history.replaceState(null,'',location.pathname + location.search);
+    await showSession(data.session);
+    if(callbackError) {recovering = false;setMode('login');message('O link de e-mail expirou ou não é válido. Solicite uma nova confirmação ou recuperação de senha.','error');}
+    $('submit').disabled = false;
+  }
+  init().catch(() => { message('Não foi possível iniciar o login. Atualize a página e tente novamente.','error'); });
+})();
+</script>
+</body>
+</html>
