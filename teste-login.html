@@ -33,7 +33,7 @@
 <button id="resend" type="button" class="link" hidden>Reenviar confirmação de e-mail</button>
 <button id="back" type="button" class="link" hidden>Voltar para entrar</button>
 </div>
-<div id="account" hidden><p class="eyebrow">CONTA CONECTADA</p><h2 id="greeting">Olá!</h2><p id="account-email" class="account"></p><div class="status-box" role="status"><strong id="access-title">Consultando sua compra…</strong><span id="access-detail" class="note"></span></div><button id="retry" type="button" class="quiet">Verificar acesso novamente</button><br><button id="logout" type="button" class="link">Sair da conta</button></div>
+<div id="account" hidden><p class="eyebrow">CONTA CONECTADA</p><h2 id="greeting">Olá!</h2><p id="account-email" class="account"></p><div class="status-box" role="status"><strong id="access-title">Consultando sua compra…</strong><span id="access-detail" class="note"></span></div><a id="open-program" href="https://milenamcross.com.br/handstand-novo-teste.html" class="primary" style="display:none;text-align:center;text-decoration:none;margin-top:18px">Abrir meus treinos de Handstand</a><button id="retry" type="button" class="quiet">Verificar acesso novamente</button><br><button id="logout" type="button" class="link">Sair da conta</button></div>
 <div id="message" role="status" aria-live="polite" class="message" hidden></div>
 </section>
 </main><footer>Milena Miranda · Handstand · Ambiente de teste</footer>
@@ -81,6 +81,7 @@
   }
   async function access(user) {
     const request = ++generation;
+    $('open-program').style.display = 'none';
     $('access-title').textContent = 'Consultando sua compra…'; $('access-detail').textContent = ''; $('retry').disabled = true;
     try {
       // RLS restringe a consulta ao e-mail do usuário autenticado. Falhas nunca liberam acesso.
@@ -89,7 +90,8 @@
       if (error) throw error;
       if (data?.length) {
         $('access-title').textContent = 'Compra aprovada localizada';
-        $('access-detail').textContent = 'Sua conta foi vinculada a uma compra aprovada. A entrega protegida dos treinos ainda está em preparação nesta versão de teste.';
+        $('access-detail').textContent = 'Sua compra foi reconhecida. Use o botão abaixo para acessar o aplicativo com os treinos.';
+        $('open-program').style.display = 'block';
       } else {
         $('access-title').textContent = 'Nenhuma compra aprovada localizada';
         $('access-detail').textContent = 'Confira se entrou com o e-mail da compra. A integração com a Hotmart ainda está em teste, e compras anteriores podem não ter sido importadas.';
